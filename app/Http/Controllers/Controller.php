@@ -159,7 +159,7 @@ class Controller extends BaseController
     {
         $image = $request->image;
         $imageName = time().'-'. $image->getClientOriginalName() ;
-        $image->move(public_path('img-projects/uploads'),$imageName) ;
+        // $image->move(public_path('img-projects/uploads'),$imageName) ;
 
         Citation::create([
             'auteur_citation' => $request->auteur ,
