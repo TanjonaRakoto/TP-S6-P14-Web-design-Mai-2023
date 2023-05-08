@@ -84,7 +84,7 @@
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="card">
                     <div class="card-img">
-                        <img src="{{ asset($liste->image_news) }}" alt="" class="img-fluid">
+                        <img src="{{ $liste->image_news) }}" alt="" class="img-fluid">
                     </div>
                     <h3><a href="/detailsActu.html/{{ $liste->summary_news }}/{{ $liste->id_news }}" class="stretched-link">{{ $liste->title_news }}</a></h3>
                     <p>{{ $liste->date_news }}</p>
@@ -110,7 +110,7 @@
             @foreach ($citations as $citation)
             <div class="swiper-slide">
                 <div class="testimonial-item">
-                  <img src="{{ asset($citation->image_auteur) }}" class="testimonial-img" alt="">
+                  <img src="{{ $citation->image_auteur }}" class="testimonial-img" alt="">
                   <h3>{{ $citation->auteur_citation }}</h3>
                   <h4>{{ $citation->fonction_auteur }}</h4>
                   <p>
