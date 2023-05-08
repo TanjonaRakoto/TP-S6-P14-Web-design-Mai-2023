@@ -157,7 +157,8 @@ class Controller extends BaseController
     public function InsererCitation(Request $request)
     {
         $image = $request->image;
-        $base = base64_encode($image) ;
+        $imagedata = file_get_contents($image->getRealPath()) ;
+        $base = base64_encode($imagedata) ;
 
         Citation::create([
             'auteur_citation' => $request->auteur ,
