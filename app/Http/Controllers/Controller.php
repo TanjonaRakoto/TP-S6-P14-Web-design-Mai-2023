@@ -45,13 +45,13 @@ class Controller extends BaseController
     public function InsererActualite(Request $request)
     {
         $image = $request->image;
-        $base = base64_encode($image) ;
+        $path = $image->store('image/uploads', 'public');
 
         News::create([
             'title_news' => $request->title,
             'summary_news' => $request->summary,
             'contains_news' => $request->contain,
-            'image_news' => $base
+            'image_news' => $path
         ]);
 
         return redirect('/listeActu.html') ;
@@ -157,12 +157,12 @@ class Controller extends BaseController
     public function InsererCitation(Request $request)
     {
         $image = $request->image;
-        $base = base64_encode($image) ;
+        $path = $image->store('image/uploads', 'public');
 
         Citation::create([
             'auteur_citation' => $request->auteur ,
             'fonction_auteur' => $request->position ,
-            'image_auteur' => $base,
+            'image_auteur' => $path,
             'valeur_citation' => $request->valeur
         ]);
 
