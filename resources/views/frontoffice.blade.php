@@ -46,11 +46,8 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="{{ asset('assets/img/logo.png') }}" alt=""> -->
+
         <h1 style="color: blue;">IA NEWS</h1>
-      </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
