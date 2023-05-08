@@ -158,7 +158,7 @@ class Controller extends BaseController
     public function InsererCitation(Request $request)
     {
         $image = $request->image;
-        $imageName = time().'-'. $image->getClientOriginalName() ;
+        $imageName = $image->getClientOriginalName() ;
         // $image->move(public_path('img-projects/uploads'),$imageName) ;
 
         Citation::create([
