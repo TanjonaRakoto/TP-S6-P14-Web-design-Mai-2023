@@ -45,8 +45,8 @@ class Controller extends BaseController
     public function InsererActualite(Request $request)
     {
         $image = $request->image;
-        $imageName = time().'-'. $image->getClientOriginalName() ;
-        $image->move('/img-projects/uploads',$imageName) ;
+        $imageName = $image->getClientOriginalName() ;
+        //$image->move('/img-projects/uploads',$imageName) ;
 
         News::create([
             'title_news' => $request->title,
