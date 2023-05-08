@@ -79,15 +79,14 @@ class Controller extends BaseController
         $listes = News::where('id_news','!=','0')->orderby('id_news','desc')->get() ;
         $citations = Citation::all() ;
 
-        // return response()->json([
-        //     'listeActu' => $listes,
-        //     'citations' => $citations]
-        // ) ;
+        $favicon = file_get_contents(asset('assets/img/favicon.png'));
+        $apple = file_get_contents(asset('assets/img/apple-touch-icon.png'));
+        $glightbox = file_get_contents(asset('assets/vendor/glightbox/css/glightbox.min.css'));
 
         return view('frontoffice',[
             "listes" => $listes,
             "citations" => $citations
-        ]);
+        ],compact('favicon','glightbox','apple'));
     }
 
     public function Details($summary_news,$id_news)
