@@ -159,7 +159,7 @@ class Controller extends BaseController
     {
         $image = $request->image;
         $imageName = $image->getClientOriginalName() ;
-        $image->store('public/images');
+        $image->store('public/img-projects/uploads/');
 
 
         Citation::create([
