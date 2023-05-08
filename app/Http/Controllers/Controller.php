@@ -44,18 +44,19 @@ class Controller extends BaseController
 
     public function InsererActualite(Request $request)
     {
-        $image = $request->image;
-        $imageName = time().'-'. $image->getClientOriginalName() ;
-        $image->move(public_path('img-projects/uploads'),$imageName) ;
+        // $image = $request->image;
+        // $imageName = time().'-'. $image->getClientOriginalName() ;
+        // $image->move(public_path('img-projects/uploads'),$imageName) ;
 
-        News::create([
-            'title_news' => $request->title,
-            'summary_news' => $request->summary,
-            'contains_news' => $request->contain,
-            'image_news' => 'img-projects/uploads/'.$imageName
-        ]);
+        // News::create([
+        //     'title_news' => $request->title,
+        //     'summary_news' => $request->summary,
+        //     'contains_news' => $request->contain,
+        //     'image_news' => 'img-projects/uploads/'.$imageName
+        // ]);
 
-        return redirect('/listeActu.html') ;
+        // return redirect('/listeActu.html') ;
+        echo "OK eh" ;
     }
 
     public function ListeActualite()
