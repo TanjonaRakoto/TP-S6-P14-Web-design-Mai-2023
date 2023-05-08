@@ -111,7 +111,7 @@
               @foreach ($citations as $citation)
               <div class="swiper-slide">
                   <div class="testimonial-item">
-                    <img src="data:image/{{ $citation->extension }};base64,{{ $citation->image_auteur }}" style="width: min-content ; height: min-content;" class="testimonial-img" alt="{{ $citation->auteur_citation }}">
+                    <img src="data:image/{{ $citation->extension }};base64,{{ $citation->image_auteur }}" style="width: 20% ; height: 5%;" class="testimonial-img" alt="{{ $citation->auteur_citation }}">
                     <h3>{{ $citation->auteur_citation }}</h3>
                     <h4>{{ $citation->fonction_auteur }}</h4>
                     <p>
