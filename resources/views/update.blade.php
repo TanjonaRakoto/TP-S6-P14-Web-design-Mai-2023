@@ -6,9 +6,9 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Accueil BackOffice</title>
-  {{-- <meta name="description" content="IA NEWS , Update BackOffice">
+  <meta name="description" content="IA NEWS , Update BackOffice">
   <meta name="keywords" content="Actualité, Intelligence Artificielle">
-  <meta name="robots" content="listeActu, frontoffice"> --}}
+  <meta name="robots" content="listeActu, frontoffice">
 
 
   <!-- Favicons -->

@@ -6,9 +6,9 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Liste Actu BackOffice</title>
-  {{-- <meta name="description" content="IA NEWS BackOffice">
+  <meta name="description" content="IA NEWS BackOffice">
   <meta name="keywords" content="Actualité, Intelligence Artificielle">
-  <meta name="robots" content="listeActu, frontoffice"> --}}
+  <meta name="robots" content="listeActu, frontoffice">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
