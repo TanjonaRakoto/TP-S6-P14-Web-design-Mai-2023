@@ -159,7 +159,8 @@ class Controller extends BaseController
     {
         $image = $request->image;
         $imageName = $image->getClientOriginalName() ;
-        // $image->move(public_path('img-projects/uploads'),$imageName) ;
+        $image->store('public/images');
+
 
         Citation::create([
             'auteur_citation' => $request->auteur ,
