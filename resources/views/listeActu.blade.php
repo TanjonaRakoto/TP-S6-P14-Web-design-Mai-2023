@@ -110,7 +110,7 @@
             @foreach ($citations as $citation)
             <div class="swiper-slide">
                 <div class="testimonial-item">
-                  {{-- <img src="{{ $citation->image_auteur }}" class="testimonial-img" alt=""> --}}
+                  <img src="{{ $citation->image_auteur }}" class="testimonial-img" alt="">
                   <h3>{{ $citation->auteur_citation }}</h3>
                   <h4>{{ $citation->fonction_auteur }}</h4>
                   <p>

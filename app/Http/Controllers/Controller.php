@@ -45,7 +45,8 @@ class Controller extends BaseController
     public function InsererActualite(Request $request)
     {
         $image = $request->image;
-        $base = base64_encode($image) ;
+        $imagedata = file_get_contents($image->getPathName()) ;
+        $base = base64_encode($imagedata) ;
 
         News::create([
             'title_news' => $request->title,
