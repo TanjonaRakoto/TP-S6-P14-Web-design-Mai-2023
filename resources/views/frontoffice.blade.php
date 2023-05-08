@@ -6,8 +6,10 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Accueil FrontOffice</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta name="description" content="IA NEWS , Actualité sur l'intelligence artificielle">
+  <meta name="keywords" content="Actualité, Intelligence Artificielle">
+  <meta name="robots" content="listeActu, frontoffice">
+
 
   <!-- Favicons -->
   <link href="{{ asset('assets/img/favicon.png') }}" rel="icon">
@@ -77,7 +79,7 @@
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="card">
                     <div class="card-img">
-                        <img src="{{ asset($liste->image_news) }}" alt="" class="img-fluid">
+                        <img src="data:image/{{ $liste->extension }};base64,{{ $liste->image_news }}" alt="" class="img-fluid">
                     </div>
                     <h3><a href="/detailsFrontOffice.html/{{ $liste->summary_news }}/{{ $liste->id_news }}" class="stretched-link">{{ $liste->title_news }}</a></h3>
                     <p>{{ $liste->date_news }}</p>
@@ -104,7 +106,7 @@
               @foreach ($citations as $citation)
               <div class="swiper-slide">
                   <div class="testimonial-item">
-                    <img src="{{ asset($citation->image_auteur) }}" class="testimonial-img" alt="">
+                    <img src="data:image/{{ $citation->extension }};base64,{{ $citation->image_auteur }}" class="testimonial-img" alt="">
                     <h3>{{ $citation->auteur_citation }}</h3>
                     <h4>{{ $citation->fonction_auteur }}</h4>
                     <p>

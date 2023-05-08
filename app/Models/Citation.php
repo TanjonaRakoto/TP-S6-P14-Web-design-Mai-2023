@@ -18,6 +18,7 @@ class Citation extends Model
         'auteur_citation',
         'valeur_citation',
         'image_auteur',
-        'fonction_auteur'
+        'fonction_auteur',
+        'extension'
     ];
 }

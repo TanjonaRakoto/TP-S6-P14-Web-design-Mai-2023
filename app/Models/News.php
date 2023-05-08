@@ -19,6 +19,7 @@ class News extends Model
         'summary_news',
         'date_news',
         'contains_news',
-        'image_news'
+        'image_news',
+        'extension'
     ];
 }

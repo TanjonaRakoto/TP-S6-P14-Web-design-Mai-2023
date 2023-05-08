@@ -6,8 +6,10 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Accueil BackOffice</title>
-  <meta content="Intelligence artificielle" name="description">
-  <meta content="" name="keywords">
+  <meta name="description" content="IA NEWS , Update BackOffice">
+  <meta name="keywords" content="Actualité, Intelligence Artificielle">
+  <meta name="robots" content="listeActu, frontoffice">
+
 
   <!-- Favicons -->
   <link href="{{ asset('assets/img/favicon.png') }}" rel="icon">

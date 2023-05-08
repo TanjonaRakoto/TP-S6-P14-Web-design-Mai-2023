@@ -47,12 +47,14 @@ class Controller extends BaseController
         $image = $request->image;
         $imagedata = file_get_contents($image->getPathName()) ;
         $base = base64_encode($imagedata) ;
+        $extension = $image->getClientOriginalExtension();
 
         News::create([
             'title_news' => $request->title,
             'summary_news' => $request->summary,
             'contains_news' => $request->contain,
-            'image_news' => $base
+            'image_news' => $base,
+            'extension' => $extension
         ]);
 
         return redirect('/listeActu.html') ;
@@ -160,12 +162,14 @@ class Controller extends BaseController
         $image = $request->image;
         $imagedata = file_get_contents($image->getPathName()) ;
         $base = base64_encode($imagedata) ;
+        $extension = $image->getClientOriginalExtension();
 
         Citation::create([
             'auteur_citation' => $request->auteur ,
             'fonction_auteur' => $request->position ,
             'image_auteur' => $base,
-            'valeur_citation' => $request->valeur
+            'valeur_citation' => $request->valeur,
+            'extension' => $extension
         ]);
 
         return redirect('/listeActu.html ') ;

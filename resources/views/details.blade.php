@@ -6,8 +6,10 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Details Actu BackOffice</title>
-  <meta content="{{ $news->summary_news }}" name="description">
-  <meta content="" name="keywords">
+  <meta name="description" content="IA NEWS , Actualité sur l'intelligence artificielle">
+  <meta name="keywords" content="Actualité, Intelligence Artificielle">
+  <meta name="robots" content="listeActu, frontoffice">
+
 
   <!-- Favicons -->
   <link href="{{ asset('assets/img/favicon.png') }}" rel="icon">
@@ -81,7 +83,7 @@
     </div><!-- End Breadcrumbs -->
 
     <div style="margin: 3%">
-        <img src="{{ asset($news->image_news) }}" style="margin: 5%; width: 90%">
+        <img src="data:image/{{ $news->extension }};base64,{{ $news->image_news }}" style="margin: 5%; width: 90%">
         {!! $news->contains_news !!}
     </div>
 

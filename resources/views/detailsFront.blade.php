@@ -6,8 +6,9 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Details FrontOffice</title>
-  <meta content="{{ $news->summary_news }}" name="description">
-  <meta content="" name="keywords">
+  <meta name="description" content="IA NEWS , Actualité sur l'intelligence artificielle">
+  <meta name="keywords" content="Actualité, Intelligence Artificielle">
+  <meta name="robots" content="listeActu, frontoffice">
 
   <!-- Favicons -->
   <link href="{{ asset('assets/img/favicon.png') }}" rel="icon">
@@ -77,7 +78,7 @@
           </div>
 
           <div class="col-lg-8">
-            <img src="{{ asset($news->image_news) }}" alt="{{ $news->title_news }}" class="img-fluid services-img">
+            <img src="data:image/{{ $news->extension }};base64,{{ $news->image_news }}" alt="{{ $news->title_news }}" class="img-fluid services-img">
             <p>{!! $news->contains_news !!}</p>
           </div>
 
