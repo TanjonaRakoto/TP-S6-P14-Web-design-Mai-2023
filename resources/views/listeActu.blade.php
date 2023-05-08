@@ -84,7 +84,7 @@
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="card">
                     <div class="card-img">
-                        <img src="data:image/jpg;base64,{{ base64_decode($liste->image_news) }}" alt="" class="img-fluid">
+                        <img src="{{ asset('/Image/'.$liste->image_news) }}" alt="" class="img-fluid">
                     </div>
                     <h3><a href="/detailsActu.html/{{ $liste->summary_news }}/{{ $liste->id_news }}" class="stretched-link">{{ $liste->title_news }}</a></h3>
                     <p>{{ $liste->date_news }}</p>
