@@ -12,7 +12,11 @@
 
     <style>
         {{ $favicon }}
+    </style>
+    <style>
         {{ $apple }}
+    </style>
+    <style>
         {{ $glightbox }}
     </style>
   <!-- Favicons -->
